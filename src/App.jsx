@@ -1,38 +1,21 @@
-import { View, Text } from 'react-native'
-import Tombol from './Tombol'
-import TextInput from './TextInput'
-import Image from './assets/image'
+import { View, Text, Image, ActivityIndicator } from 'react-native'
+import Tombol from './components/Tombol'
+import TextInput from './components/TextInput'
 import React from 'react'
 
 export default function App() {
   return (
     <View>
-      <Text>coba</Text>
+      <Text>Trial React Native at Bootcamp 2nd Session Chapter 1 - SDI</Text>
       <Tombol/>
       <TextInput/>
       <Image
-        source={require('./assets/image/img-575473348-1475702964129.png')} // Ganti dengan path gambar lokal kamu
-        style={styles.image}
+        source={require('./assets/YarisCross.png')} // Path ke gambar lokal
+      />
+      <ActivityIndicator/>
+      <Image
+        source={require('./assets/YarisCrossRadaGede.png')} // Path ke gambar lokal
       />
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  text: {
-    fontSize: 18,
-    marginBottom: 10, // Memberi jarak antara teks dan gambar
-    textAlign: 'center',
-  },
-  image: {
-    width: 200,
-    height: 200,
-  },
-});
-

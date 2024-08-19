@@ -16,7 +16,7 @@ const TextInputExample = () => {
         style={styles.input}
         onChangeText={onChangeNumber}
         value={number}
-        placeholder="useless placeholder"
+        placeholder="Masukkan angka"
         keyboardType="numeric"
       />
     </SafeAreaView>

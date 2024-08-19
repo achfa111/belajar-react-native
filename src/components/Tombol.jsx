@@ -5,8 +5,8 @@ export default function Tombol() {
     return (
         <View>
             <Button
-                title="Learn More"
-                color="#841584"
+                title="Learn Me More"
+                color="green"
                 accessibilityLabel="Learn more about this purple button"
             />
         </View>
